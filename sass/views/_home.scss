@@ -1,0 +1,34 @@
+.indexGallery {
+    display: grid;
+    grid-template-areas:
+        "fotoUno fotoDos"
+        "fotoTres fotoCuatro";
+    grid-template-rows: 362px 395px;
+    grid-template-columns: 624px 382px;
+    justify-content: center;
+    gap: map-get($spacings, spacing);
+
+    &__first-img {
+        grid-area: fotoUno;
+        animation-name: from-left;
+        animation-duration: 1s;
+    }
+
+    &__second-img {
+        grid-area: fotoDos;
+        animation-name: from-right;
+        animation-duration: 1s;
+    }
+
+    &__third-img {
+        grid-area: fotoTres;
+        animation-name: from-left;
+        animation-duration: 1s;
+    }
+
+    &__fourth-img {
+        grid-area: fotoCuatro;
+        animation-name: from-right;
+        animation-duration: 1s;
+    }
+}

@@ -1,0 +1,15 @@
+.landscapeGallery {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 290px 248px;
+    justify-content: center;
+    gap: map-get($spacings, spacing);
+    padding: map-get($spacings, spacing);
+    animation-name: from-left;
+    animation-duration: 1s;
+}
+
+.historyText {
+    animation-name: from-bottom;
+    animation-duration: 1s;
+}
